@@ -1,0 +1,11 @@
+.gradle/
+build/
+run/
+
+.idea/
+*.iml
+.vscode/
+
+.claude/
+CLAUDE.md
+.mcp.json

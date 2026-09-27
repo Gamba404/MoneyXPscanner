@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "net.primeblocks.money.mixin",
+	"client": [
+		"HudOverlayMixin",
+		"PlayerTabOverlayAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
