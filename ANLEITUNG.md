@@ -5,7 +5,7 @@ Hochrechnung, was du bei diesem Tempo in einer Stunde machen würdest.
 
 ## Installation
 
-Jar-Datei in deinen `mods`-Ordner legen (Fabric Loader + Fabric API für Minecraft 26.2 werden
+Jar-Datei in deinen `mods`-Ordner legen (Fabric Loader + Fabric API für Minecraft 26.3 werden
 vorausgesetzt). Danach einfach normal auf PrimeBlocks spielen - der Mod meldet sich von selbst,
 sobald du einen Job aktiv machst.
 

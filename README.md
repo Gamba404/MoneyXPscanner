@@ -1,6 +1,6 @@
 # PrimeMoney
 
-Fabric-Mod für Minecraft 26.2 / PrimeBlocks. Liest PrimeBlocks' eigene Job-Leiste mit und zeigt
+Fabric-Mod für Minecraft 26.3 / PrimeBlocks. Liest PrimeBlocks' eigene Job-Leiste mit und zeigt
 mittig auf dem Bildschirm an, wie viel Geld und Job-XP du verdienst - inklusive Hochrechnung pro
 Stunde, Summe der letzten 60 Minuten und der letzten 24 Stunden.
 
@@ -16,7 +16,7 @@ angezeigt wird.
 ./gradlew build
 ```
 
-Das fertige Jar liegt danach unter `build/libs/primemoney-26.2.jar`.
+Das fertige Jar liegt danach unter `build/libs/primemoney-26.3.jar`.
 
 ## Bedienung
 
