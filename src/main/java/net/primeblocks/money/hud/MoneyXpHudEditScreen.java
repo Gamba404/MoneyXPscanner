@@ -3,7 +3,7 @@ package net.primeblocks.money.hud;
 import java.util.List;
 import java.util.Locale;
 
-import org.lwjgl.glfw.GLFW;
+import com.mojang.blaze3d.platform.InputConstants;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
@@ -237,7 +237,7 @@ public final class MoneyXpHudEditScreen extends Screen {
 
 	@Override
 	public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
-		if (event.button() == GLFW.GLFW_MOUSE_BUTTON_RIGHT && isOverScaleButton(event.x(), event.y())) {
+		if (event.button() == InputConstants.MOUSE_BUTTON_RIGHT && isOverScaleButton(event.x(), event.y())) {
 			changeScale(-PrimeMoneyConfig.SCALE_STEP);
 			measure();
 			clampIntoView();
@@ -248,7 +248,7 @@ public final class MoneyXpHudEditScreen extends Screen {
 			return true;
 		}
 
-		if (event.button() == GLFW.GLFW_MOUSE_BUTTON_LEFT && isInsideBox(event.x(), event.y())) {
+		if (event.button() == InputConstants.MOUSE_BUTTON_LEFT && isInsideBox(event.x(), event.y())) {
 			dragging = true;
 			grabOffsetX = (int) event.x() - boxX;
 			grabOffsetY = (int) event.y() - boxY;
@@ -272,7 +272,7 @@ public final class MoneyXpHudEditScreen extends Screen {
 
 	@Override
 	public boolean mouseReleased(MouseButtonEvent event) {
-		if (dragging && event.button() == GLFW.GLFW_MOUSE_BUTTON_LEFT) {
+		if (dragging && event.button() == InputConstants.MOUSE_BUTTON_LEFT) {
 			dragging = false;
 			return true;
 		}

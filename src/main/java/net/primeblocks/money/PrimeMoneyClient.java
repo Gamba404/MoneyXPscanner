@@ -1,6 +1,6 @@
 package net.primeblocks.money;
 
-import org.lwjgl.glfw.GLFW;
+import com.mojang.blaze3d.platform.InputConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -75,9 +75,9 @@ public final class PrimeMoneyClient implements ClientModInitializer {
 		// Ordinary key mappings, so they appear under Options -> Controls -> Miscellaneous and can
 		// be rebound there. F8/F9 are unbound in vanilla.
 		KeyMapping editKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-				"key.primemoney.edit_hud", GLFW.GLFW_KEY_F8, KeyMapping.Category.MISC));
+				"key.primemoney.edit_hud", InputConstants.KEY_F8, KeyMapping.Category.MISC));
 		KeyMapping toggleKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-				"key.primemoney.toggle_hud", GLFW.GLFW_KEY_F9, KeyMapping.Category.MISC));
+				"key.primemoney.toggle_hud", InputConstants.KEY_F9, KeyMapping.Category.MISC));
 
 		// Throttled: scanning the tab list and scoreboard for the CB marker is cheap once, not
 		// worth doing sixty to two-hundred-forty times a second.
