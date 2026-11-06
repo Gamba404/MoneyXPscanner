@@ -8,6 +8,7 @@
 		"BIG_Gamba"
 	],
 	"contact": {},
+	"icon": "assets/primemoney/icon.png",
 	"license": "MIT",
 	"environment": "client",
 	"entrypoints": {
